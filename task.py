@@ -1,26 +1,55 @@
-#
-#Banking simulator. Write a code in python that simulates the banking system. 
-#The program should:
-# - be able to create new banks
-# - store client information in banks
-# - allow for cash input and withdrawal
-# - allow for money transfer from client to client
-#If you can think of any other features, you can add them.
-#This code shoud be runnable with 'python task.py'.
-#You don't need to use user input, just show me in the script that the structure of your code works.
-#If you have spare time you can implement: Command Line Interface, some kind of data storage, or even multiprocessing.
-#
-#Try to expand your implementation as best as you can. 
-#Think of as many features as you can, and try implementing them.
-#Make intelligent use of pythons syntactic sugar (overloading, iterators, generators, etc)
-#Most of all: CREATE GOOD, RELIABLE, READABLE CODE.
-#The goal of this task is for you to SHOW YOUR BEST python programming skills.
-#Impress everyone with your skills, show off with your code.
-#
-#Your program must be runnable with command "python task.py".
-#Show some usecases of your library in the code (print some things)
-#
-#When you are done upload this code to your github repository. 
-#
-#Delete these comments before commit!
-#Good luck.
+class Customer():
+  def __init__(self, id, money = 0):
+    self.id = id 
+    self.money = money
+
+    
+
+
+class Bank():
+
+  def __init__(self):
+    self.customer_accounts = []
+    self.ammount_of_money = 100000
+    
+  def add_new_customer(self, customer):
+    new_customer = {'{}'.format(customer.id): customer.money}
+    self.customer_accounts.append(new_customer)
+
+  def check_customer_balance(self, customer):
+    for account in self.customer_accounts:
+      customr_id ='{}'.format(customer.id)
+      if customr_id in account:
+        return account[customr_id]
+
+  def transfer_cash(self, sender, recipient, cash):
+    for sending_account in self.customer_accounts:
+      if '{}'.format(sender.id) in sending_account:
+        for receving_account in self.customer_accounts:
+          if '{}'.format(recipient.id) in receving_account:
+            sending_account['{}'.format(sender.id)] -= cash
+            receving_account['{}'.format(recipient.id)] += cash
+            return True
+          else:
+            return False
+  def withdraw_cash(self, customer, cash, flow):
+    for account in self.customer_accounts:
+      customr_id ='{}'.format(customer.id) 
+      if customr_id in account:
+        if cash <= account.get(customr_id):
+          if flow:
+            account[customr_id] += cash
+          else:
+            account[customr_id] -= cash
+
+
+
+if __name__ == '__main__':
+  customer1 = Customer(1, 100)
+  bank1 = Bank()
+  bank1.add_new_customer(customer1)
+  print(bank1.check_customer_balance(customer1))
+  deposit = True
+  cash = 10
+  bank1.withdraw_cash(customer1, cash, deposit)
+  print(bank1.check_customer_balance(customer1))
