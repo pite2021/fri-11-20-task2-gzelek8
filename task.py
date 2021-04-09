@@ -15,6 +15,7 @@ class Bank():
   def add_new_customer(self, customer):
     new_customer = {'{}'.format(customer.id): customer.money}
     self.customer_accounts.append(new_customer)
+    self.ammount_of_money += customer.money
 
   def check_customer_balance(self, customer):
     for account in self.customer_accounts:
@@ -32,6 +33,7 @@ class Bank():
             return True
           else:
             return False
+
   def withdraw_cash(self, customer, cash, flow):
     for account in self.customer_accounts:
       customr_id ='{}'.format(customer.id) 
@@ -39,8 +41,11 @@ class Bank():
         if cash <= account.get(customr_id):
           if flow:
             account[customr_id] += cash
+            self.ammount_of_money += cash
+
           else:
             account[customr_id] -= cash
+            self.ammount_of_money -= cash
 
 
 
