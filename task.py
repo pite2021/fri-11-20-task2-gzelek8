@@ -23,6 +23,7 @@ class Bank:
         self.name = name
         self.ammount_of_money = 100000
     
+
     def __str__(self):
         return 'Bank {}'.format(self.name)
 
