@@ -1,0 +1,33 @@
+21-Apr-21 09:59:13 - INFO - Customer 1 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 2 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 3 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 4 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 5 create account in PKO
+21-Apr-21 09:59:13 - INFO - Customer 6 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 7 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 8 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 9 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 10 create account in PKO
+21-Apr-21 09:59:13 - INFO - Customer 11 create account in Python Bank
+21-Apr-21 09:59:13 - INFO - Customer 12 create account in Python Bank
+21-Apr-21 09:59:13 - INFO - Customer 13 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 14 create account in PKO
+21-Apr-21 09:59:13 - INFO - Customer 15 create account in BNP
+21-Apr-21 09:59:13 - INFO - Customer 16 create account in BNP
+21-Apr-21 09:59:13 - INFO - 1671
+21-Apr-21 09:59:13 - INFO - Customer 11 from Bank Python Bank take 1000 loan
+21-Apr-21 09:59:13 - INFO - Customer 11 from Bank Python Bank has too little income
+21-Apr-21 09:59:13 - INFO - Customer 11 deposit 250
+21-Apr-21 09:59:13 - INFO - 1921
+21-Apr-21 09:59:13 - INFO - Customer 15 form BNP transfer 15 to client 5 form PKO
+21-Apr-21 09:59:13 - INFO - Customer 9 transfer 273 to client 7
+21-Apr-21 09:59:13 - INFO - Customer 9 transfer 768 to client 7
+21-Apr-21 09:59:13 - INFO - Customer 10 form PKO transfer 14 to client 7 form BNP
+21-Apr-21 09:59:13 - INFO - Customer 4 transfer 941 to client 3
+21-Apr-21 09:59:13 - INFO - Customer 1 form BNP transfer 866 to client 5 form PKO
+21-Apr-21 09:59:13 - INFO - Customer 14 form PKO transfer 463 to client 1 form BNP
+21-Apr-21 09:59:13 - INFO - Customer 6 transfer 798 to client 6
+21-Apr-21 09:59:13 - INFO - Customer 9 transfer 613 to client 3
+21-Apr-21 09:59:13 - INFO - Customer 2 form BNP transfer 312 to client 10 form PKO
+21-Apr-21 09:59:13 - INFO - Customer 13 transfer 589 to client 6
+21-Apr-21 09:59:13 - INFO - Customer 5 form PKO transfer 985 to client 15 form BNP
