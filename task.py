@@ -18,6 +18,7 @@ class Customer:
     def __str__(self):
         return 'Customer {} his cash {}, his bank {}'.format(self.id_key, self.money, self.own_bank)
 
+
     @property
     def monthly_income(self):
         return self._monthly_income
